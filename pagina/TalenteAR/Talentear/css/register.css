@@ -1,0 +1,139 @@
+body {
+  background: #00416A;
+  background: -webkit-linear-gradient(to right, #E4E5E6,  #1d6aa8); 
+  background: linear-gradient(to right, #E4E5E6,  #1d6aa8); 
+}
+.navbar-title {
+  margin-left: 40px;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar-title {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+.container {
+  max-width: 650px;
+  height: 600px;
+  margin: 100px auto;
+  padding: 16px 16px 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px  #1d6aa8;
+  background-color: white;
+}
+
+h2:not(h2.title) {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 12px;
+}
+form {
+  margin-bottom: 15px;
+}
+fieldset {
+  border-radius: 6px;
+  padding: 12px;
+  border-color: #ccc;
+}
+legend {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+.form-row {
+  display: flex;
+  margin-bottom: 25px;
+}
+.form-group {
+  flex: 1;
+}
+.select-wrapper {
+  position: relative;
+}
+.arrow {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #555;
+  position: absolute;
+  left: 250px;
+  transform: translateY(-350%);
+}
+select {
+  appearance: none;
+}
+select:focus,
+input:focus {
+  outline: none;
+}
+.terms-checkbox {
+  margin: 15px 0;
+}
+.labelterms {
+  font-size: 15px;
+}
+input[type="checkbox"] {
+  margin: 6px;
+  transform: scale(1.2);
+}
+label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #555;
+}
+input:not(#terms):not(.sumbit) {
+  padding: 6px;
+  width: 86%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+}
+select {
+  padding: 6px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+input[type="submit"] {
+  padding: 9px;
+  background-color: #1d6aa8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+input[type="submit"]:hover {
+  transition: background-color 0.5s;
+  background-color: #397cb3;
+}
+p {
+  text-align: center;
+}
+.linkredirect {
+  color: #1d6aa8;
+}
+.linkredirect:hover {
+  text-decoration: underline;
+  color: #2f88d1;
+}
+.tooltip-trigger {
+  cursor: pointer;
+}
+.tooltip-content {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+}
+.tooltip-trigger:hover .tooltip-content {
+  transform: translateY(-75%);
+  display: block;
+}

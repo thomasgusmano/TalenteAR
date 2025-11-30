@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>&nbsp;&nbsp;Talentear</title>
+        <link rel="stylesheet" type="text/css" href="../css/home.css" />
+        <link rel="stylesheet" type="text/css" href="../css/sticky.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="../js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <link rel="icon" type="image/png" href="../../imagenes/logotalentear.png" />
+      </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-title">
+        <div class="imagenesflechas">
+          <a href="#" class="flecha-link" onclick="goBack()">
+            <img class="flecha" src="../../imagenes/flecha.png" alt="volver atrás" />
+            <img
+              class="flecha-hover"
+              src="../../imagenes/flecharellena.png"
+              alt="volver atrás"
+            />
+          </a>
+        </div>
+        <a href="index.html" class="navbar-title">
+          <img class="maleta" src="../../imagenes/logotalentear.png" alt="" />
+          <h2 class="title">Talentear</h2>
+        </a>
+      </div>
+      <div class="box-container">
+        <a href="../../TalenteARpartners/html/loginpartners.html" class="box redirect">
+          Cerrar sesión
+        </a>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+          <img src="../../imagenes/trabajador.png" alt="" class="mi-imagen" />
+          <div class="search-container">
+            <div class="search-box">
+              <img src="../../imagenes/lupa.png" alt="Buscar" class="search-icon" />
+              <input
+                type="text"
+                class="search-lens"
+                placeholder="Busca empleos de tu región"
+              />
+            </div>
+            <div class="search-box">
+              <img
+                src="../../imagenes/ubicacion.png"
+                alt="Buscar"
+                class="search-icon"
+              />
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Seleccionar provincia"
+                onclick="toggleProvinceList(event)"
+                onfocus="toggleProvinceList(event)"
+                onblur="toggleProvinceList(event)"
+              />
+              <div class="province-list" id_talento="provinceList" style="display: none">
+                <table class="menu">
+                  <tr>
+                    <td onclick="selectProvince(event)">Buenos Aires</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Catamarca</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Chaco</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Chubut</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Córdoba</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Corrientes</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Entre Ríos</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Formosa</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Jujuy</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">La Pampa</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">La Rioja</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Mendoza</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Misiones</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Neuquén</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Río Negro</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Salta</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">San Juan</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">San Luis</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Santa Cruz</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Santa Fe</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Santiago del Estero</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Tierra del Fuego</td>
+                  </tr>
+                  <tr>
+                    <td onclick="selectProvince(event)">Tucumán</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <a><button class="blue-button">
+                Buscar empleo
+              </button></a
+            >
+          </div>
+          <div class="curriculums">
+            <h1 class="found-jobs">
+              GESTIONE SU PERFIL Y SU CURRICULUM
+            </h1>
+            <p>
+                <box-icon name='user' type='solid' class="users-icon" ></box-icon>
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <footer class="footer">
+        <div class="social-media">
+          <a href="https://www.instagram.com/TalenteARtec4"
+            ><img src="../../imagenes/instagram-alt-logo-108.png"
+          /></a>
+          <a href="https://www.linkedin.com/in/TalenteAR/"><img src="../../imagenes/linkedin-logo-108.png"/></a>
+          <a href="https://www.facebook.com/profile.php?id_talento=61553049380666"
+            ><img src="../../imagenes/facebook-circle-logo-108.png"
+          /></a>
+        </div>
+        <div class="footer-links">
+          <a href="terminosycondiciones.html">Términos y Condiciones</a><b>-</b>
+          <a href="politic.html">&nbsp;Política de Privacidad</a><b>-</b>
+          <a href="address.html">&nbsp;Dirección física</a>
+        </div>
+        <div class="footer-text">TalenteAR® - Todos los derechos reservados</div>
+      </footer>
+      </body>
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+    </html>

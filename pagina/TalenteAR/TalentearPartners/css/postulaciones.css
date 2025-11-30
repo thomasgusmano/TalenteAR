@@ -1,0 +1,202 @@
+/* ======================================= */
+/* Archivo CSS: postulaciones.css */
+/* ======================================= */
+
+/* --- Estilos del Contenedor Principal (Para mejorar legibilidad) --- */
+.body-postulaciones {
+    /* Asume que el body puede tener el degradado, el fondo blanco hace contraste */
+    background-color: #f4f4f4; 
+}
+
+.container-body {
+    padding: 30px; 
+    margin: 20px auto;
+    max-width: 1100px; 
+    background-color: #ffffff; 
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+}
+
+/* --- Títulos y Separadores --- */
+.titulo-seccion {
+    border-bottom: 3px solid #5d2b77; 
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    color: #5d2b77;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+/* --- Estados Vacíos (Empty State) --- */
+.empty-state-message {
+    padding: 30px;
+    margin: 20px 0;
+    text-align: center;
+    border: 1px dashed #5d2b77;
+    background-color: #f3e5f5; 
+    border-radius: 8px;
+    color: #5d2b77;
+    font-size: 1.1em;
+}
+
+.empty-state-message h4 {
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+/* --- LAYOUT DE DOS COLUMNAS --- */
+
+.two-column-layout {
+    display: flex; 
+    gap: 30px; 
+    align-items: flex-start; 
+    margin-top: 30px;
+}
+
+.column-section {
+    flex: 1; 
+    min-width: 0; 
+}
+
+.column-section .titulo-seccion {
+    font-size: 1.5em; 
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+}
+
+/* Media Query para dispositivos pequeños (Vuelven a ser una columna) */
+@media (max-width: 900px) {
+    .two-column-layout {
+        flex-direction: column; 
+        gap: 0;
+    }
+}
+
+
+/* --- Paneles de Postulantes --- */
+.postulante-panel {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.postulante-panel:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.postulante-panel h3 {
+    color: #5d2b77; 
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postulante-casting {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cv-data {
+    margin-top: 15px;
+    padding: 10px;
+    border-left: 3px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.cv-data p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+/* --- Botones y Acciones --- */
+.panel-acciones {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: flex-start;
+}
+
+.btn-acept, .btn-rech, .btn-info { 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-acept { 
+    background-color: #4CAF50; 
+    color: white; 
+}
+.btn-acept:hover {
+    background-color: #43a047;
+}
+
+.btn-rech { 
+    background-color: #f44336; 
+    color: white; 
+}
+.btn-rech:hover {
+    background-color: #e53935;
+}
+
+.btn-info { 
+    background-color: #007bff; 
+    color: white; 
+}
+.btn-info:hover {
+    background-color: #0056b3;
+}
+
+/* --- Tags de Estado --- */
+.tag-aceptada { 
+    background-color: #e6ffe6; 
+    color: #1e7e34; 
+    padding: 4px 8px; 
+    border-radius: 4px; 
+    font-weight: bold; 
+}
+.tag-rechazada { 
+    background-color: #f0f0f0; 
+    color: #888; 
+    padding: 4px 8px; 
+    border-radius: 4px; 
+    font-weight: bold; 
+}
+
+/* --- Mensajes de Feedback (Al redirigir) --- */
+.msg-success, .msg-warning, .msg-error {
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.msg-success { 
+    color: #1e7e34; 
+    background-color: #d4edda; 
+    border: 1px solid #c3e6cb; 
+}
+.msg-warning { 
+    color: #856404; 
+    background-color: #fff3cd; 
+    border: 1px solid #ffeeba; 
+}
+.msg-error { 
+    color: #721c24; 
+    background-color: #f8d7da; 
+    border: 1px solid #f5c6cb; 
+}

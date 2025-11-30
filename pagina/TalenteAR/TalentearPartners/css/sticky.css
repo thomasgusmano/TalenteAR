@@ -1,0 +1,153 @@
+/* ---- body ---- */
+/* ---- body ---- */
+/* ---- body ---- */
+
+body {  
+    background: linear-gradient(to right, #aaa7ac, #621397);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+
+/* ---- navbar ---- */
+/* ---- navbar ---- */
+/* ---- navbar ---- */
+
+.navbar {
+    background-color: #621397;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 2px #a451db2f;
+    z-index: 50;
+    position: relative; 
+  }
+  .maleta {
+    width: 40px;
+    height: auto;
+    margin: 0px 10px;
+  }
+  .title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  .navbar-title,
+  .navbar-title:visited,
+  .navbar-title:hover {
+    display: flex;
+    align-items: center;
+    color: #ffffff; 
+    text-decoration: none;
+  }
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  .box-container {
+    display: flex;
+  }
+  .box {
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  .box:hover  {
+    background-color: rgba(255, 255, 255, 0.137);
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+  }
+  .redirect:link,
+  .redirect:active,
+  .redirect:visited,
+  .redirect:hover {
+    color: #fff;
+  }
+  
+/*---- flechas goback ----*/ 
+/*---- flechas goback ----*/ 
+/*---- flechas goback ----*/ 
+
+.imagenesflechas {
+    position: absolute;
+    left: 10px;
+  }
+  .flecha,
+  .flecha-hover {
+    height: 51px;
+  }
+  .flecha-hover {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+  }
+  .flecha-link:hover .flecha-hover {
+    display: block;
+    opacity: 1;
+  }
+
+/*---- footer ----*/ 
+/*---- footer ----*/ 
+/*---- footer ----*/ 
+
+.footer {
+    color: #ffffff;
+    text-align: center;
+    padding: 80px;
+    margin-top: 5%;
+  }
+  
+  .social-media {
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+  }
+  
+  .social-media a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+  }
+  .social-media img {
+    width: 50px;
+    height: 50px;
+    transition: filter 0.3s;
+    color: #ffffff;
+    filter: invert(100%);
+  }
+  .social-media img:hover {
+    filter: invert(70%);
+  }
+  .footer-links {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+  }
+  .guion-footer  {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    text-decoration: none;
+  }
+  .footer-links a:hover:not(.guion-footer) {
+    text-decoration: underline;
+  }
+  .footer-text {
+    margin-top: 40px;
+    font-size: 16px;
+  }
+  

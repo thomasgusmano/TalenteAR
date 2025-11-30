@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2025-04-01" view-index="0" gantt-divider-location="341" resource-divider-location="300" version="3.3.3316" locale="es_ES">
+    <description/>
+    <view zooming-state="default:8" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="194" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="73" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="73" order="2"/>
+        <field id="tpd15" name="Notas" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <timeline><![CDATA[29,20,14,28,1]]></timeline>
+        <option id="color.recent"><![CDATA[#000000 #00cccc #cc0033 #990099 #ff6600 #00ffff #00ffcc #3300cc #f4f4f4 #ff3333]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="1" uid="e25f77f612374f94b7b7372b8c34ddc9" name="Fase de preparacion y planificacion" color="#00ffff" meeting="false" start="2025-05-23" duration="57" complete="0" expand="false">
+            <task id="0" uid="bec40e54f1da4df39321b67accf8b363" name="Planificacion" meeting="false" start="2025-05-23" duration="15" complete="0" expand="true">
+                <notes><![CDATA[Identificar el propósito central del proyecto, especificando qué necesidad o problema busca solucionar, el público al que apunta y el valor diferencial que aporta frente a otras propuestas del mercado.]]></notes>
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="11" uid="6a7b54db74f848f1b3551c3170cf27d1" name="FODA" meeting="false" start="2025-06-13" duration="14" complete="0" expand="true">
+                <notes><![CDATA[Creamos el FODA para ver las fortalezas, oportunidades, debilidades y amenazas de nuestro proyecto]]></notes>
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="12" uid="f141c834621e478ead7165a329d1e821" name="Factor humano" meeting="false" start="2025-07-03" duration="14" complete="0" expand="true">
+                <notes><![CDATA[Hacemos entrevistas y cuestionarios atraves de foros o circulos sociales para ver a que publico apuntar]]></notes>
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="13" uid="61764fb7cb8740ada9d35623b30f1a46" name="Analisis del sistema" meeting="false" start="2025-07-23" duration="14" complete="0" expand="true">
+                <notes><![CDATA[Examinar cómo funcionará el sistema, definiendo sus componentes principales y la relación entre ellos.]]></notes>
+                <depend id="14" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="2" uid="aa308773ac8148edae497cc6793ac998" name="Bosquejos y Prototipos" color="#ff6600" meeting="false" start="2025-08-12" duration="35" complete="0" expand="false">
+            <task id="14" uid="e1cbcddc573d47408356ae4005c89ae8" name="Boceto BBDD" meeting="false" start="2025-08-12" duration="7" complete="0" expand="true">
+                <notes><![CDATA[Realizamos el boceto grafico de la base de datos]]></notes>
+                <depend id="15" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="15" uid="280dc1ebd5744980bb09405061c4bcbe" name="Prototipo BBDD" meeting="false" start="2025-08-21" duration="7" complete="0" expand="true">
+                <notes><![CDATA[Crear una versión de prueba de la base de datos que muestre cómo se organizará y conectará la información.]]></notes>
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="16" uid="0e0827b20e0b4d958e204c701dec33a4" name="Boceto pagina" meeting="false" start="2025-09-01" duration="7" complete="0" expand="true">
+                <notes><![CDATA[Realizamos el boceto grafico de la pagina web]]></notes>
+                <depend id="17" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="17" uid="188354db0c1f45349ff2b77d54d62a05" name="Prototipo pagina" meeting="false" start="2025-09-10" duration="14" complete="0" expand="true">
+                <notes><![CDATA[Crear un modelo preliminar de la página que muestre su diseño y funcionamiento básico.]]></notes>
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="3" uid="f4c4b373b1e34054b794205aba06dc82" name="Codificacion y desarrollo" color="#990099" meeting="false" start="2025-09-30" duration="43" complete="0" expand="false">
+            <task id="38" uid="d504772cd45d4eac944315cfa42e6cb8" name="Creacion y configuracion del host" meeting="false" start="2025-09-30" duration="4" complete="0" expand="true">
+                <notes><![CDATA[Creamos y configuracion el host para la plataforma en linea]]></notes>
+            </task>
+            <task id="39" uid="39e968729a574270b61c8bce50881a41" name="Maqueteo de interfaz grafica" meeting="false" start="2025-10-03" duration="5" complete="0" expand="true">
+                <notes><![CDATA[Realizamos la estructura visual del HTML y CSS para que sea funcional y atractiva visualmente]]></notes>
+            </task>
+            <task id="18" uid="e33a75826a6849859a8bbb56c185b2a6" name="Desarrollo BBDD y Pagina" meeting="false" start="2025-09-30" duration="43" complete="0" expand="true">
+                <notes><![CDATA[Codificamos nuestra base de datos y pagina]]></notes>
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="4" uid="6cb4d6e359f14fd1b6bdb27e4a975972" name="Documentación" color="#000000" meeting="false" start="2025-08-12" duration="78" complete="0" thirdDate="2025-08-12" thirdDate-constraint="1" expand="false">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+            <task id="28" uid="b22af7039f5b42049b0edab07ddc9f74" name="Guia tecnica" color="#3300cc" meeting="false" start="2025-08-12" duration="78" complete="0" expand="true">
+                <notes><![CDATA[Dejamos documentado el código y la estructura del sistema para asegurar su correcta comprensión y mantenimiento interno.]]></notes>
+                <depend id="29" type="1" difference="0" hardness="Strong"/>
+            </task>
+            <task id="29" uid="51259c6736b04399ad0f81a4baee2d84" name="Guia de uso" color="#3300cc" meeting="false" start="2025-08-12" duration="78" complete="0" expand="true">
+                <notes><![CDATA[Crear una guía práctica que muestre cómo utilizar la plataforma de manera simple y ordenada.]]></notes>
+            </task>
+            <task id="35" uid="5a2baa811e8540f0aee612552412653b" name="Guia de proceso" meeting="false" start="2025-08-12" duration="78" complete="0" expand="true">
+                <notes><![CDATA[Crear una guía que explique los procedimientos internos para operar y administrar la plataforma de forma ordenada.]]></notes>
+            </task>
+        </task>
+        <task id="5" uid="da0862f55dec43398b26040b3bb65474" name="Testeo" color="#cc0033" meeting="false" start="2025-11-28" duration="7" complete="0" expand="false">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+            <task id="19" uid="9eaf1b81dd3b47c1a7ef2898ab946a6f" name="Prueba del sistema" meeting="false" start="2025-11-28" duration="7" complete="0" expand="true">
+                <notes><![CDATA[Probar el sistema completo para comprobar que todas sus funciones operen correctamente.]]></notes>
+                <depend id="20" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="36" uid="44f1ec1299f744a7a3aa38ef37d6bda2" name="Corregir errores" meeting="false" start="2025-12-04" duration="3" complete="0" expand="true">
+                <notes><![CDATA[Revisar el sistema y corregir los fallos detectados para asegurar su buen desempeño.]]></notes>
+            </task>
+        </task>
+        <task id="6" uid="41c4aa210a78451a97b5f1ed2594bdbf" name="Publicacion del proyecto" color="#00cccc" meeting="false" start="2025-12-09" duration="8" complete="0" expand="false">
+            <task id="20" uid="620c0751cf9041129056fc72e84a4e9d" name="Lanzamiento" meeting="false" start="2025-12-09" duration="8" complete="0" expand="true">
+                <notes><![CDATA[Publicar la plataforma y hacerla accesible al público.]]></notes>
+            </task>
+            <task id="37" uid="91b43fce49344d15a6ca25bd8774eb68" name="Inicializacion del marketing" meeting="false" start="2025-12-15" duration="4" complete="0" expand="true">
+                <notes><![CDATA[Comenzar la difusión del proyecto mediante estrategias de promoción y comunicación.]]></notes>
+            </task>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

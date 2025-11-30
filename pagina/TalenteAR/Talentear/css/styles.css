@@ -1,0 +1,349 @@
+.container {
+  z-index: -2;
+  background-image: url("../../imagenes/fondorojonegro.jpg");
+  background-size: cover;
+  float: left;
+  width: 100%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar {
+  display: flex;
+  align-items: center;
+  margin-left: -15px;
+}
+.search-box {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  position: relative;
+  border-radius: 10px;
+  margin: 12px 0px;
+}
+
+.search-input,
+.search-lens {
+  width: 270px;
+  padding: 15px 5px 15px 15px;
+  border: none;
+  outline-width: 0px;
+  font-size: 18px;
+  border-radius: 15px;
+}
+
+.province-list {
+  text-align: center;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  border-radius: 15px;
+}
+
+.province-list table {
+  width: 100%;
+}
+
+.province-list td {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.province-list td:hover {
+  background-color: #cbc9c9;
+}
+
+.search-icon {
+  width: 20px;
+  margin: 0px 5px;
+}
+
+.mi-imagen {
+  width: 410px;
+  margin-top: 20px;
+  margin-left: 500px; 
+  animation: desplazarDesdeIzquierda 1s forwards;
+}
+
+@keyframes desplazarDesdeIzquierda {
+  0% {
+    margin-left: -410px; /
+  }
+  100% {
+    margin-left: 20px; 
+  }
+}
+
+.blue-button {
+  margin-bottom: 30px;
+  border: 1px solid black;
+  width: 322px;
+  max-height: 150px;
+  background-color: #ffff00;
+  color: #000000;
+  border-radius: 20px;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.blue-button:hover {
+  background-color: #a4a400;
+}
+
+.found-jobs-container {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+}
+.highlighted-number {
+  font-size: 45px;
+  color: #ffff00;
+  font-weight: bold;
+}
+.empleo-container {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  padding-top: 600px;
+  font-size: 30px;
+  font-weight: 500;
+  text-shadow: 0 0 25px #1d6aa8, 0 0 50px #1d6aa8, 0 0 75px #1d6aa8,
+    0 0 25px transparent, 0 0 50px transparent, 0 0 75px transparent;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  transition: color 1s, text-shadow 1s;
+}
+.empleo-container:hover {
+  color: #0e3559;
+  text-shadow: 0 0 25px white, 0 0 50px white, 0 0 75px white,
+    0 0 25px transparent, 0 0 50px transparent, 0 0 75px transparent;
+}
+.carrousel {
+  width: 100%;
+  padding: 10px 0;
+  position: relative;
+  overflow: hidden;
+  margin-top: 150px;
+  margin-bottom: 170px;
+}
+.carrousel .swiper-carousel {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.carrousel .swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 15px;
+  text-align: start;
+  box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+.carrousel .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.carrousel .swiper-slide .card-description {
+  padding: 1rem;
+}
+
+.carrousel .swiper-slide .card-title,
+.carrousel .swiper-slide .card-text {
+  margin-bottom: 0.5rem;
+}
+
+.carrousel .swiper-slide .card-link {
+  text-align: center;
+}
+
+.carrousel .swiper-slide .card-link a {
+  text-decoration: none;
+  color: #1d6ce2;
+}
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev {
+  left: 0;
+}
+.container-news {
+  text-align: center;
+  background-image: url("../../imagenes/lines.png");
+  background-size: cover;
+  float: left;
+  width: 100%;
+  box-shadow: 0px -8px 8px #1d6aa89a, 0px 8px 8px rgba(29, 106, 168, 0.233);
+}
+#registration-message {
+  font-size: 30px;
+  color: #000df1;
+  text-align: center;
+  font-weight: bold;
+}
+.sidebar-news {
+  text-align: left;
+  margin: 0 35px;
+}
+.sidebar-news img{
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  vertical-align: middle;
+}
+.sidebar-news p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.content-container {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 40px 0;
+  box-shadow: 0px 20px 30px #1d6aa8;
+}
+header h1 {
+  height: 1px;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 500px;
+  padding: 100px;
+}
+.video-element {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+
+/* ========================================= */
+/* === Responsive Design (Media Queries) === */
+/* ========================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. Navbar y Navegación */
+    .navbar {
+        /* Permite que los elementos se apilen si no caben */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px; /* Ajusta el padding para móvil */
+    }
+
+    .navbar-title {
+        /* Asegura que el título y logo siempre estén visibles */
+        margin-bottom: 10px;
+    }
+
+    .box-container {
+        /* Hace que los enlaces de navegación se apilen verticalmente */
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Ocupa el ancho completo */
+        margin-top: 5px;
+    }
+
+    .box.redirect {
+        /* Ajusta el estilo de cada botón/enlace para que ocupe todo el ancho */
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+        padding: 10px;
+        box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
+    }
+
+    /* 2. Contenedor Principal y Sidebar */
+    .container {
+        /* Asegura que el contenedor ocupe el 100% del ancho */
+        padding: 15px;
+        margin-top: 20px; /* Separación del navbar */
+    }
+
+    .sidebar {
+        /* Hace que el sidebar ocupe el ancho completo */
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 10px;
+        margin: 0;
+    }
+    
+    .mi-imagen {
+        /* Ajusta el tamaño de la imagen dentro del sidebar si es demasiado grande */
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* 3. Búsqueda y Formularios */
+    .search-container {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .search-box {
+        /* Las cajas de búsqueda ocupan todo el ancho */
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-lens, .search-input {
+        /* Asegura que los campos de texto ocupen el ancho de su contenedor */
+        width: calc(100% - 40px); /* Ajusta el ancho para dejar espacio al icono */
+    }
+
+    .blue-button {
+        width: 100%; /* Botón de búsqueda ocupa el ancho completo */
+        padding: 15px 0;
+        margin-top: 15px;
+    }
+    
+    /* 4. Pie de Página (Footer) */
+    .footer {
+        /* Asegura que el footer se adapte al ancho */
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .social-media {
+        order: 2; /* Mueve los iconos debajo de los enlaces para mejor estética */
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .footer-links {
+        order: 1; /* Mantiene los enlaces primero */
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .footer-links a, .footer-links b {
+        /* Hace que cada enlace de la lista se muestre en su propia línea */
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer-text {
+        order: 3;
+        margin-top: 10px;
+    }
+} 

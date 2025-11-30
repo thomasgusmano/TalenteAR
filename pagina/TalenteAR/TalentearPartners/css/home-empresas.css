@@ -1,0 +1,395 @@
+
+h3 {
+    text-align: center;
+}
+form {
+    margin-left: 30px;
+    max-width: 400px;
+    padding: 5px 20px 20px 20px;
+    border: 3px solid #9737af;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 20px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.DescPuesto {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 20px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    max-height: 100px; 
+    resize: none; 
+}
+
+
+.boton-publicar {
+    display: block;
+    margin: 20px auto 5px auto; 
+    background-color: #a751c9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.boton-solicitud {
+    display: block;
+    margin: 0 auto; 
+    background-color: #a751c9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.boton-publicar:hover, .boton-solicitud:hover {
+    background-color: #c67de2;
+}
+
+
+.curriculums-container:not(.hideform) {
+    border: 3px solid #9737af;
+    border-radius: 12px;
+    background-color: white;
+    margin: 0px 30px 0px 0px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%; 
+    max-height: 500px; 
+    overflow-y: auto; 
+}
+
+.hideform {
+    margin-top: -50px;
+    float: right;
+    background-color: transparent;
+    border: none;
+}
+
+.curriculums-container::-webkit-scrollbar{
+    width: 20px;
+
+  }
+.curriculums-container::-webkit-scrollbar-thumb {
+    background-color: #9737af;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+.curriculums-container::-webkit-scrollbar-thumb:hover {
+    background-color: #753186;
+    -webkit-transition: 0.3s ease;
+  }
+
+
+.curriculum {
+    width: 90%; 
+    margin: 10px auto;
+    padding: 15px;
+    border: 2px solid #d592e6;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.curriculum h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+.curriculum p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+
+.curriculum:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-5px);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.form-container {
+    width: 40%; 
+}
+
+
+.sticky-header {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    margin: 0px;
+    padding: 20px 0px;
+    border-bottom: 3px solid #9737af;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    border: 0px;
+    padding: 0px;
+    background-color: transparent;
+  }
+  .profile-logo {
+    width: 42.67px;
+    height: auto;
+    border-radius: 50%;
+    filter: invert(1);
+    margin-right: 2vh;
+  }
+  .profile-logo:hover {
+    filter: invert(0.8);
+    cursor: pointer;
+  }
+
+  hr {
+    margin: 0;
+  }
+
+.dropdown-content {
+    margin: 1vh 1vh 0px 0px;
+    border-radius: 6px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    right: 0;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 6px;
+}
+.show {
+    display: block;
+}
+.boton-solicitud {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-solicitud:hover {
+    background-color: #45a049;
+}
+
+.boton-solicitud.enviado {
+    background-color: gray;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+.dropdown-content {
+    margin: 1vh 1vh 0px 0px;
+    border-radius: 6px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    right: 0;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 6px;
+}
+.show {
+    display: block;
+}
+
+/* --- ESTILOS PROFESIONALES DE NOTIFICACIONES --- */
+
+.notif-container {
+    position: relative;
+    margin-right: 15px; 
+}
+.notif-button {
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    padding: 0;
+    position: relative;
+}
+
+/* Campanita y Contador */
+.campanita {
+    width: 28px;
+    filter: invert(100%);
+    display: block;
+}
+.campanita:hover {
+    filter: invert(80%);
+}
+.numerito { 
+    position: absolute; 
+    top: -6px; 
+    right: -6px;
+    background: #c62828; 
+    color: white; 
+    font-size: 11px; 
+    font-weight: 700;
+    border-radius: 50%; 
+    padding: 2px 6px; 
+    min-width: 12px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown Container */
+.notif-dropdown { 
+    display: none; 
+    position: absolute; 
+    right: 0; 
+    top: 40px; 
+    width: 350px; 
+    max-height: 400px; 
+    overflow-y: auto; 
+    background: #ffffff; 
+    border: 1px solid #dde7f5; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    z-index: 1000; 
+    padding: 10px; /* Aumentamos el padding para dar espacio a los costados */
+}
+
+/* Scrollbar para Notificaciones */
+.notif-dropdown::-webkit-scrollbar {
+    width: 10px;
+}
+.notif-dropdown::-webkit-scrollbar-thumb {
+    background: #aaa; 
+    border-radius: 10px;
+}
+.notif-dropdown::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+}
+
+/* Título y Separador */
+.notif-dropdown h4 {
+    color: #1e3a5f;
+    padding: 0 5px; /* Ajustamos padding horizontal */
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center;
+    display: block !important; 
+}
+.notif-dropdown hr {
+    border: 0;
+    border-top: 1px solid #f0f2f5;
+    margin: 10px 0;
+}
+
+/* Estilo de cada Notificación (Tarjeta) */
+.notificacion {
+    display: block; 
+    padding: 10px 15px;
+    margin-bottom: 12px; 
+    border-radius: 8px; 
+    /* ¡AUMENTAMOS la sombra para una separación MUCHO MÁS visible! */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más oscura y extendida */
+    transition: background-color 0.2s;
+    cursor: pointer;
+    background-color: #ffffff; 
+    border: 1px solid #e0e0e0; /* Opcional: un borde muy sutil para mayor definición */
+}
+.notificacion:last-child {
+    margin-bottom: 0;
+}
+.notificacion:hover {
+    background-color: #f0f4f8;
+}
+.notificacion p {
+    margin: 0;
+    line-height: 1.4;
+    padding: 0;
+}
+.notificacion strong {
+    color: #0056b3; 
+    font-weight: 600;
+}
+
+/* Detalles de Notificación */
+.notif-fecha {
+    font-size: 0.75em;
+    color: #777;
+    margin-top: 2px !important;
+}
+.notif-estado {
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: 5px !important;
+}
+.estado-pendiente { color: #947100; }
+.estado-aceptada { color: #2e7d32; }
+.estado-rechazada { color: #c62828; }
+
+/* Botón de Acción en el Dropdown */
+.boton-ver-notif {
+    margin-top: 8px;
+    display: inline-block;
+    width: auto;
+    padding: 6px 10px;
+    border: none;
+    background-color: #375daf; /* Azul corporativo */
+    color: white; 
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+.boton-ver-notif:hover {
+    background-color: #2a478b;
+}

@@ -1,0 +1,238 @@
+/* ---------------------------------------------------- */
+/* --- 1. Estilos Generales y Colores de Fondo --- */
+/* ---------------------------------------------------- */
+.body-solicitudes { 
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); 
+    color: #2c3e50; 
+    line-height: 1.4; 
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Contenedor Principal (Se mantiene) --- */
+.container-body {
+    max-width: 1300px;
+    width: 95%; 
+    margin: 60px auto 40px auto; 
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.titulo-seccion {
+    text-align: left;
+    color: #1e3a5f;
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-weight: 700;
+    padding-left: 0;
+    border-bottom: 2px solid #dde7f5;
+    padding-bottom: 8px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* --- Estilo de Fila y Zebra Stripping (Se mantiene) --- */
+.solicitudes-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid #e0e6ed;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.solicitud-panel {
+    display: flex;
+    align-items: center; 
+    background-color: #ffffff;
+    padding: 10px 15px;
+    min-height: 70px;
+}
+.solicitud-panel:nth-child(even) {
+    background-color: #f7f9fc; 
+}
+.solicitud-panel + .solicitud-panel {
+    border-top: 1px solid #dde7f5;
+}
+
+/* ---------------------------------------------------- */
+/* --- 2. Columnas con Ancho Mínimo Fijo (Alineación Rígida) --- */
+/* ---------------------------------------------------- */
+
+/* Columna 1: Empresa y Contacto */
+.panel-info-principal {
+    flex: 3;
+    min-width: 400px; 
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+    border-right: 1px solid #f0f2f5;
+    justify-content: center;
+}
+/* ... otros estilos de info principal ... */
+.panel-info-principal h3 {
+    display: flex; 
+    align-items: center; 
+    margin: 0 0 4px 0;
+    font-size: 1.1em;
+    color: #0056b3;
+}
+.panel-info-principal .empresa-contacto {
+    padding-left: 28px; 
+    font-size: 0.85em;
+    color: #556677;
+}
+.panel-info-principal .empresa-contacto p {
+    margin: 0;
+    line-height: 1.6; 
+    display: flex;
+    align-items: center; 
+}
+
+/* Columna 2: Fecha */
+.panel-fecha {
+    flex: 1.4; 
+    min-width: 150px; 
+    padding: 0 15px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    border-right: 1px solid #f0f2f5;
+    font-size: 0.85em;
+    color: #667788;
+}
+
+/* Columna 3: Estado */
+.panel-estado {
+    flex: 1.5; 
+    min-width: 150px; 
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #f0f2f5;
+}
+/* ... estilos de estado-tag ... */
+.estado-tag {
+    min-width: 130px; 
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 3px; 
+    font-weight: 600;
+    font-size: 0.75em;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.tag-pendiente { background-color: #fff8e1; color: #947100; border: 1px solid #ffe082; }
+.tag-aceptada { background-color: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+.tag-rechazada { background-color: #f5f5f5; color: #616161; border: 1px solid #bdbdbd; }
+
+
+/* Columna 4: Acciones (Botones) */
+.panel-acciones {
+    flex: 2; 
+    min-width: 250px; 
+    padding-left: 15px;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: 8px; 
+}
+.panel-acciones form {
+    flex-shrink: 0; 
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* --- Estilos de Botones y SOLUCIÓN HOVER/FOCUS --- */
+.btn-small {
+    padding: 8px 12px;
+    font-size: 0.85em; 
+    font-weight: 600;
+    border-radius: 4px;
+    white-space: nowrap;
+    border: none !important; 
+    outline: none !important;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.2s ease; /* Transición para un hover suave */
+}
+
+/* ACEPTAR (Verde) */
+.btn-acept { 
+    background-color: #2e7d32; /* Color normal */
+    color: white; 
+}
+/* CLAVE: Mantener el color en hover/focus (ligeramente más oscuro) */
+.btn-acept:hover,
+.btn-acept:focus {
+    background-color: #246a2a; /* Verde oscuro */
+    color: white;
+}
+
+/* RECHAZAR (Rojo) */
+.btn-rech { 
+    background-color: #c62828; /* Color normal */
+    color: white; 
+}
+/* CLAVE: Mantener el color en hover/focus (ligeramente más oscuro) */
+.btn-rech:hover,
+.btn-rech:focus {
+    background-color: #a52121; /* Rojo oscuro */
+    color: white;
+}
+
+/* VER PERFIL (Azul) */
+.btn-info { 
+    background-color: #0056b3; 
+    color: white; 
+}
+.btn-info:hover,
+.btn-info:focus {
+    background-color: #003d80; /* Azul oscuro */
+    color: white;
+}
+
+
+/* Estilos de iconos (Se mantienen) */
+.icon {
+    margin-right: 5px;
+    color: #4a69bd;
+    font-size: 0.9em;
+    min-width: 15px; 
+    text-align: center;
+    line-height: 1; 
+}
+.icon-lg {
+    font-size: 1.1em;
+    min-width: 20px;
+    margin-right: 8px;
+}
+
+
+/* --- Media Queries (Responsividad - Se mantienen) --- */
+@media (max-width: 992px) { 
+    .panel-info-principal, .panel-fecha, .panel-estado, .panel-acciones {
+        min-width: auto; 
+    }
+    .container-body { max-width: 95%; margin: 40px auto; padding: 15px; }
+    .solicitud-panel { flex-wrap: wrap; }
+    .panel-info-principal, .panel-fecha, .panel-estado, .panel-acciones {
+        flex: 1 1 100%;
+        padding: 5px 0;
+        border-right: none;
+    }
+    .panel-acciones { justify-content: space-around; }
+    .btn-small { flex: 1; max-width: 48%; }
+    
+    .panel-acciones form:nth-child(1) { order: 2; }
+    .panel-acciones form:nth-child(2) { order: 3; }
+    .panel-acciones form:nth-child(3) { order: 1; }
+}

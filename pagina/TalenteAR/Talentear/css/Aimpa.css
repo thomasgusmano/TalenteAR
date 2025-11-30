@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.carousel {
+  width: 90%;
+  padding: 10px 40px;
+}
+
+.carousel .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 15px;
+  text-align: start;
+  box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+}
+
+.carousel .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.carousel .swiper-slide .card-description {
+  padding: 1rem 1rem;
+}
+
+.carousel .swiper-slide .card-title,
+.carousel .swiper-slide .card-text {
+  margin-bottom: 0.5rem;
+}
+
+.carousel .swiper-slide .card-link {
+  text-align: center;
+}
+
+.carousel .swiper-slide .card-link a {
+  text-decoration: none;
+  color: #1d6ce2;
+}
+
+.swiper-button-next {
+  right: 26px !important;
+}
+
+.swiper-button-prev {
+  left: 26px !important;
+}
